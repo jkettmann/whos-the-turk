@@ -40,3 +40,74 @@
 .read-the-docs {
   color: #888;
 }
+
+.game-container {
+  text-align: center;
+  padding: 2rem;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.food-options {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+  min-height: 200px;
+}
+
+.food-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: transform 0.2s, opacity 0.3s ease-in-out;
+  opacity: 1;
+}
+
+.food-image:hover {
+  transform: scale(1.05);
+}
+
+.food-image.fade-out {
+  opacity: 0;
+}
+
+.flash-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 1000;
+  opacity: 0;
+  background-color: rgb(255, 0, 0);
+}
+
+.flash-overlay.flash-wrong {
+  animation: flash-red 0.8s ease-in-out;
+}
+
+@keyframes flash-red {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  16.67% {
+    opacity: 0.8;
+  }
+  33.33% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  66.67% {
+    opacity: 0;
+  }
+  83.33% {
+    opacity: 0.8;
+  }
+}
