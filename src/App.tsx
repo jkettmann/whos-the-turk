@@ -65,6 +65,30 @@ const items: Item[] = [
   { image: "/other/sophie_cookson.webp", type: "other" },
 ];
 
+interface GameOverProps {
+  score: number;
+  totalRounds: number;
+  onPlayAgain: () => void;
+}
+
+const GameOver = ({ score, totalRounds, onPlayAgain }: GameOverProps) => {
+  const getMessage = () => {
+    if (score >= 8) return "Congrats! You have a good Turk radar";
+    if (score >= 4) return "Not bad but you should work on your Turk radar";
+    return "Don't tell anyone they don't look like a Turk";
+  };
+
+  return (
+    <div className="game-container">
+      <h2>{getMessage()}</h2>
+      <p>
+        Your final score: {score} out of {totalRounds}
+      </p>
+      <button onClick={onPlayAgain}>Play Again</button>
+    </div>
+  );
+};
+
 function App() {
   const [currentRound, setCurrentRound] = useState(1);
   const [startIndex, setStartIndex] = useState(
@@ -106,23 +130,17 @@ function App() {
 
   if (currentRound > TOTAL_ROUNDS) {
     return (
-      <div className="game-container">
-        <h2>Game Over!</h2>
-        <p>
-          Your final score: {score} out of {TOTAL_ROUNDS}
-        </p>
-        <button
-          onClick={() => {
-            setCurrentRound(1);
-            setScore(0);
-            setStartIndex(
-              Math.floor(Math.random() * Math.floor(items.length / 3)) * 3
-            );
-          }}
-        >
-          Play Again
-        </button>
-      </div>
+      <GameOver
+        score={score}
+        totalRounds={TOTAL_ROUNDS}
+        onPlayAgain={() => {
+          setCurrentRound(1);
+          setScore(0);
+          setStartIndex(
+            Math.floor(Math.random() * Math.floor(items.length / 3)) * 3
+          );
+        }}
+      />
     );
   }
 
@@ -147,10 +165,14 @@ function App() {
         )}
 
         <h1>Who's the Turk?</h1>
-        <p>
-          Round {currentRound} of {TOTAL_ROUNDS}
+        <p style={{ maxWidth: 420, margin: "auto" }}>
+          Ever told a person they don't look like a Turk? You only have the
+          right to do so if you pass this test.
         </p>
-        <p>Score: {score}</p>
+        <p style={{ fontWeight: "bold" }}>
+          So tell me: out of the 3 photos below, who's the Turk?
+        </p>
+
         <div className="food-options">
           {currentOptions.map((item, index) => (
             <img
@@ -161,6 +183,11 @@ function App() {
             />
           ))}
         </div>
+
+        <p>
+          Round {currentRound} of {TOTAL_ROUNDS}
+        </p>
+        <p>Score: {score}</p>
       </div>
     </>
   );
