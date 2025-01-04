@@ -8,61 +8,61 @@ interface Item {
 }
 
 const items: Item[] = [
-  { image: "/placeholder1.jpg", type: "other" },
-  { image: "/aslihan_guner.jpg", type: "turk" },
-  { image: "/placeholder2.jpg", type: "other" },
+  { image: "/other/agnes_kittelsen.jpg", type: "other" },
+  { image: "/turk/aslihan_guner.jpg", type: "turk" },
+  { image: "/other/tamzin_merchant.jpg", type: "other" },
 
-  { image: "/asli_melisa_uzun.jpg", type: "turk" },
-  { image: "/placeholder3.jpg", type: "other" },
-  { image: "/placeholder4.jpg", type: "other" },
+  { image: "/turk/asli_melisa_uzun.jpg", type: "turk" },
+  { image: "/other/alexandra_maria_lara.jpg", type: "other" },
+  { image: "/other/alicja_bachleda.jpg", type: "other" },
 
-  { image: "/placeholder5.jpg", type: "other" },
-  { image: "/placeholder6.jpg", type: "other" },
-  { image: "/beren_saat.webp", type: "turk" },
+  { image: "/other/amelia_warner.jpg", type: "other" },
+  { image: "/other/charlotte_riley.jpg", type: "other" },
+  { image: "/turk/beren_saat.webp", type: "turk" },
 
-  { image: "/placeholder7.jpg", type: "other" },
-  { image: "/cagatay_ulusoy.webp", type: "turk" },
-  { image: "/placeholder8.jpg", type: "other" },
+  { image: "/other/ben_barnes.jpg", type: "other" },
+  { image: "/turk/cagatay_ulusoy.webp", type: "turk" },
+  { image: "/other/david_oakes.jpg", type: "other" },
 
-  { image: "/placeholder9.jpg", type: "other" },
-  { image: "/placeholder10.jpg", type: "other" },
-  { image: "/elcin_sangu.jpg", type: "turk" },
+  { image: "/turk/kerem_bursin.jpg", type: "turk" },
+  { image: "/other/freddie_fox.jpg", type: "other" },
+  { image: "/other/george_blagden.webp", type: "other" },
 
-  { image: "/placeholder11.jpg", type: "other" },
-  { image: "/gizem_karaca.jpg", type: "turk" },
-  { image: "/placeholder12.jpg", type: "other" },
+  { image: "/other/georgia_may_foote.jpg", type: "other" },
+  { image: "/turk/gizem_karaca.jpg", type: "turk" },
+  { image: "/other/weronika_rosati.jpg", type: "other" },
 
-  { image: "/placeholder13.jpg", type: "other" },
-  { image: "/placeholder14.jpg", type: "other" },
-  { image: "/hande_ercel.jpg", type: "turk" },
+  { image: "/other/jack_huston.avif", type: "other" },
+  { image: "/other/jamie_blackley.jpg", type: "other" },
+  { image: "/turk/kivanc-tatlitug.jpg", type: "turk" },
 
-  { image: "/placeholder15.jpg", type: "other" },
-  { image: "/hazal_kaya.jpg", type: "turk" },
-  { image: "/placeholder16.jpg", type: "other" },
+  { image: "/other/jessica_brown_findlay.png", type: "other" },
+  { image: "/turk/hazal_kaya.jpg", type: "turk" },
+  { image: "/other/jessica_schwarz.jpg", type: "other" },
 
-  { image: "/kerem_bursin.jpg", type: "turk" },
-  { image: "/placeholder17.jpg", type: "other" },
-  { image: "/placeholder18.jpg", type: "other" },
+  { image: "/turk/elcin_sangu.jpg", type: "turk" },
+  { image: "/other/kasia_smutniak.jpg", type: "other" },
+  { image: "/other/katie_mcgrath.webp", type: "other" },
 
-  { image: "/placeholder19.jpg", type: "other" },
-  { image: "/kivanc-tatlitug.jpg", type: "turk" },
-  { image: "/placeholder20.jpg", type: "other" },
+  { image: "/other/lisa_nilsson.jpg", type: "other" },
+  { image: "/turk/hande_ercel.jpg", type: "turk" },
+  { image: "/other/magdalena_rozczka.webp", type: "other" },
 
-  { image: "/mehmet_ozan_dolunay.jpg", type: "turk" },
-  { image: "/placeholder21.jpg", type: "other" },
-  { image: "/placeholder22.jpg", type: "other" },
+  { image: "/turk/mehmet_ozan_dolunay.jpg", type: "turk" },
+  { image: "/other/nicholas_hoult.jpg", type: "other" },
+  { image: "/other/max_irons.jpg", type: "other" },
 
-  { image: "/placeholder23.jpg", type: "other" },
-  { image: "/placeholder24.jpg", type: "other" },
-  { image: "/selda_alkor.webp", type: "turk" },
+  { image: "/other/michelle_ryan.jpg", type: "other" },
+  { image: "/other/malin_buska.webp", type: "other" },
+  { image: "/turk/selda_alkor.webp", type: "turk" },
 
-  { image: "/selen-soyder.jpg", type: "turk" },
-  { image: "/placeholder25.jpg", type: "other" },
-  { image: "/placeholder26.jpg", type: "other" },
+  { image: "/turk/selen-soyder.jpg", type: "turk" },
+  { image: "/other/sabrina_bartlett.jpeg", type: "other" },
+  { image: "/other/sidse_babett_knudsen.webp", type: "other" },
 
-  { image: "/placeholder27.jpg", type: "other" },
-  { image: "/tugce_kazaz.webp", type: "turk" },
-  { image: "/placeholder28.jpg", type: "other" },
+  { image: "/other/silje_torp.jpg", type: "other" },
+  { image: "/turk/tugce_kazaz.webp", type: "turk" },
+  { image: "/other/sophie_cookson.webp", type: "other" },
 ];
 
 function App() {
