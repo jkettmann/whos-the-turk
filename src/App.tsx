@@ -7,62 +7,64 @@ interface Item {
   type: "turk" | "other";
 }
 
+const getImagePath = (path: string) => `/whos-the-turk${path}`;
+
 const items: Item[] = [
-  { image: "/other/agnes_kittelsen.jpg", type: "other" },
-  { image: "/turk/aslihan_guner.jpg", type: "turk" },
-  { image: "/other/tamzin_merchant.jpg", type: "other" },
+  { image: getImagePath("/other/agnes_kittelsen.jpg"), type: "other" },
+  { image: getImagePath("/turk/aslihan_guner.jpg"), type: "turk" },
+  { image: getImagePath("/other/tamzin_merchant.jpg"), type: "other" },
 
-  { image: "/turk/asli_melisa_uzun.jpg", type: "turk" },
-  { image: "/other/alexandra_maria_lara.jpg", type: "other" },
-  { image: "/other/alicja_bachleda.jpg", type: "other" },
+  { image: getImagePath("/turk/asli_melisa_uzun.jpg"), type: "turk" },
+  { image: getImagePath("/other/alexandra_maria_lara.jpg"), type: "other" },
+  { image: getImagePath("/other/alicja_bachleda.jpg"), type: "other" },
 
-  { image: "/other/amelia_warner.jpg", type: "other" },
-  { image: "/other/charlotte_riley.jpg", type: "other" },
-  { image: "/turk/beren_saat.webp", type: "turk" },
+  { image: getImagePath("/other/amelia_warner.jpg"), type: "other" },
+  { image: getImagePath("/other/charlotte_riley.jpg"), type: "other" },
+  { image: getImagePath("/turk/beren_saat.webp"), type: "turk" },
 
-  { image: "/other/ben_barnes.jpg", type: "other" },
-  { image: "/turk/cagatay_ulusoy.webp", type: "turk" },
-  { image: "/other/david_oakes.jpg", type: "other" },
+  { image: getImagePath("/other/ben_barnes.jpg"), type: "other" },
+  { image: getImagePath("/turk/cagatay_ulusoy.webp"), type: "turk" },
+  { image: getImagePath("/other/david_oakes.jpg"), type: "other" },
 
-  { image: "/turk/kerem_bursin.jpg", type: "turk" },
-  { image: "/other/freddie_fox.jpg", type: "other" },
-  { image: "/other/george_blagden.webp", type: "other" },
+  { image: getImagePath("/turk/kerem_bursin.jpg"), type: "turk" },
+  { image: getImagePath("/other/freddie_fox.jpg"), type: "other" },
+  { image: getImagePath("/other/george_blagden.webp"), type: "other" },
 
-  { image: "/other/georgia_may_foote.jpg", type: "other" },
-  { image: "/turk/gizem_karaca.jpg", type: "turk" },
-  { image: "/other/weronika_rosati.jpg", type: "other" },
+  { image: getImagePath("/other/georgia_may_foote.jpg"), type: "other" },
+  { image: getImagePath("/turk/gizem_karaca.jpg"), type: "turk" },
+  { image: getImagePath("/other/weronika_rosati.jpg"), type: "other" },
 
-  { image: "/other/jack_huston.avif", type: "other" },
-  { image: "/other/jamie_blackley.jpg", type: "other" },
-  { image: "/turk/kivanc-tatlitug.jpg", type: "turk" },
+  { image: getImagePath("/other/jack_huston.avif"), type: "other" },
+  { image: getImagePath("/other/jamie_blackley.jpg"), type: "other" },
+  { image: getImagePath("/turk/kivanc-tatlitug.jpg"), type: "turk" },
 
-  { image: "/other/jessica_brown_findlay.png", type: "other" },
-  { image: "/turk/hazal_kaya.jpg", type: "turk" },
-  { image: "/other/jessica_schwarz.jpg", type: "other" },
+  { image: getImagePath("/other/jessica_brown_findlay.png"), type: "other" },
+  { image: getImagePath("/turk/hazal_kaya.jpg"), type: "turk" },
+  { image: getImagePath("/other/jessica_schwarz.jpg"), type: "other" },
 
-  { image: "/turk/elcin_sangu.jpg", type: "turk" },
-  { image: "/other/kasia_smutniak.jpg", type: "other" },
-  { image: "/other/katie_mcgrath.webp", type: "other" },
+  { image: getImagePath("/turk/elcin_sangu.jpg"), type: "turk" },
+  { image: getImagePath("/other/kasia_smutniak.jpg"), type: "other" },
+  { image: getImagePath("/other/katie_mcgrath.webp"), type: "other" },
 
-  { image: "/other/lisa_nilsson.jpg", type: "other" },
-  { image: "/turk/hande_ercel.jpg", type: "turk" },
-  { image: "/other/magdalena_rozczka.webp", type: "other" },
+  { image: getImagePath("/other/lisa_nilsson.jpg"), type: "other" },
+  { image: getImagePath("/turk/hande_ercel.jpg"), type: "turk" },
+  { image: getImagePath("/other/magdalena_rozczka.webp"), type: "other" },
 
-  { image: "/turk/mehmet_ozan_dolunay.jpg", type: "turk" },
-  { image: "/other/nicholas_hoult.jpg", type: "other" },
-  { image: "/other/max_irons.jpg", type: "other" },
+  { image: getImagePath("/turk/mehmet_ozan_dolunay.jpg"), type: "turk" },
+  { image: getImagePath("/other/nicholas_hoult.jpg"), type: "other" },
+  { image: getImagePath("/other/max_irons.jpg"), type: "other" },
 
-  { image: "/other/michelle_ryan.jpg", type: "other" },
-  { image: "/other/malin_buska.webp", type: "other" },
-  { image: "/turk/selda_alkor.webp", type: "turk" },
+  { image: getImagePath("/other/michelle_ryan.jpg"), type: "other" },
+  { image: getImagePath("/other/malin_buska.webp"), type: "other" },
+  { image: getImagePath("/turk/selda_alkor.webp"), type: "turk" },
 
-  { image: "/turk/selen-soyder.jpg", type: "turk" },
-  { image: "/other/sabrina_bartlett.jpeg", type: "other" },
-  { image: "/other/sidse_babett_knudsen.webp", type: "other" },
+  { image: getImagePath("/turk/selen-soyder.jpg"), type: "turk" },
+  { image: getImagePath("/other/sabrina_bartlett.jpeg"), type: "other" },
+  { image: getImagePath("/other/sidse_babett_knudsen.webp"), type: "other" },
 
-  { image: "/other/silje_torp.jpg", type: "other" },
-  { image: "/turk/tugce_kazaz.webp", type: "turk" },
-  { image: "/other/sophie_cookson.webp", type: "other" },
+  { image: getImagePath("/other/silje_torp.jpg"), type: "other" },
+  { image: getImagePath("/turk/tugce_kazaz.webp"), type: "turk" },
+  { image: getImagePath("/other/sophie_cookson.webp"), type: "other" },
 ];
 
 interface GameOverProps {
